@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class CSVReader {
-
     public SudokuBoard readBoard(String filePath) throws IOException {
         int[][] grid = new int[9][9];
         int rowCount = 0;
