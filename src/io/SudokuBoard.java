@@ -4,6 +4,7 @@ public class SudokuBoard {
     private final int[][] grid;
     private static final int SIZE = 9;
     private static final int BOX_SIZE = 3;
+
     // Constructor - creates a new board from a 9x9 grid
     public SudokuBoard(int[][] grid) {
         // Check if the grid is exactly 9x9

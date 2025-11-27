@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class CSVReader {
+
     public SudokuBoard readBoard(String filePath) throws IOException {
         int[][] grid = new int[9][9];
         int rowCount = 0;
@@ -43,7 +44,6 @@ public class CSVReader {
                 }
                 rowCount++;
             }
-
             // Check if we got exactly 9 rows
             if (rowCount != 9) {
                 throw new IllegalArgumentException(
