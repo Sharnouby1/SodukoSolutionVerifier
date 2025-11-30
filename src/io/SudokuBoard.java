@@ -17,6 +17,9 @@ public class SudokuBoard {
         }
         this.grid = grid;
     }
+    public int[][] getGrid() {
+        return grid;
+    }
 
     // Get a specific value from the board
     public int getValue(int row, int col) {
