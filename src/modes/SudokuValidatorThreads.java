@@ -1,13 +1,12 @@
 package modes;
-import validation.*;
 import java.util.ArrayList;
 import java.util.List;
 import app.*;
-public class SudokuValidatorEngine {
+public class SudokuValidatorThreads {
 
     private final int[][] board;
 
-    public SudokuValidatorEngine(int[][] board) {
+    public SudokuValidatorThreads(int[][] board) {
         this.board = board;
     }
 

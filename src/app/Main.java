@@ -16,7 +16,7 @@ public class Main {
             CSVReader reader = new CSVReader();
             SudokuBoard board = reader.readBoard(filePath);
 
-            SudokuValidatorEngine engine = new SudokuValidatorEngine(board.getGrid());
+            SudokuValidatorThreads engine = new SudokuValidatorThreads(board.getGrid());
             var messages = engine.validate(mode);
 
             if (messages.isEmpty()) {
